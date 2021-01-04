@@ -72,4 +72,9 @@ Route::group(['prefix' => 'auth'], function () {
         Route::get('withdraw', 'EarningController@withdraw');
         Route::get('', 'EarningController@index');
     });
+
+    Route::group(['prefix' => 'review', 'middleware' => ['custom.auth']], function () {
+        Route::get('check-review', 'ReviewController@isReviewSubmitted');
+        Route::resource('', 'ReviewController');
+    });
 });
