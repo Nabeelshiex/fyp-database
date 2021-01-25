@@ -1,6 +1,8 @@
 <?php
 
-use App\Http\Controllers\PostController;
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Content-Type');
+
 use Illuminate\Support\Facades\Route;
 
 /*
