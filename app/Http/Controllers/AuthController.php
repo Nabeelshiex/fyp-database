@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-header('Access-Control-Allow-Origin: *');
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
