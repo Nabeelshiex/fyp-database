@@ -54,6 +54,8 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        return Response::json(['message' => "You are not allowed to register"], 200);
+
         $validator = User::storeValidate($request);
 
         if (!$validator->fails()) {
