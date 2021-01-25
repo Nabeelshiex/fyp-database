@@ -4,6 +4,9 @@ use Illuminate\Support\Str;
 
 $DATABASE_URL=parse_url('DATABASE_URL');
 
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Content-Type');
+
 return [
 
     /*
